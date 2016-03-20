@@ -1,9 +1,6 @@
 package builder
 
-import (
-	"strconv"
-	"testing"
-)
+import "testing"
 
 type Builder1 struct {
 	result string
@@ -51,8 +48,8 @@ func (b *Builder2) Part3() {
 	b.result += 3
 }
 
-func (b *Builder2) GetResult() string {
-	return strconv.Itoa(b.result)
+func (b *Builder2) GetResult() int {
+	return b.result
 }
 
 func TestBuilder2(t *testing.T) {
@@ -60,7 +57,7 @@ func TestBuilder2(t *testing.T) {
 	director := NewDirector(builder)
 	director.Construct()
 	res := builder.GetResult()
-	if res != "6" {
-		t.Fatalf("Builder2 fail expect 6 acture %s", res)
+	if res != 6 {
+		t.Fatalf("Builder2 fail expect 6 acture %d", res)
 	}
 }

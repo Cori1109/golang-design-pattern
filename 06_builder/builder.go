@@ -5,7 +5,6 @@ type Builder interface {
 	Part1()
 	Part2()
 	Part3()
-	GetResult() string
 }
 
 type Director struct {
