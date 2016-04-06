@@ -2,22 +2,14 @@ package state
 
 func ExampleWeek() {
 	ctx := NewDayContext()
-	ctx.Today()
-	ctx.Next()
-	ctx.Today()
-	ctx.Next()
-	ctx.Today()
-	ctx.Next()
-	ctx.Today()
-	ctx.Next()
-	ctx.Today()
-	ctx.Next()
-	ctx.Today()
-	ctx.Next()
-	ctx.Today()
-	ctx.Next()
-	ctx.Today()
-	ctx.Next()
+	todayAndNext := func() {
+		ctx.Today()
+		ctx.Next()
+	}
+
+	for i := 0; i < 8; i++ {
+		todayAndNext()
+	}
 	// Output:
 	// Sunday
 	// Monday
