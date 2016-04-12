@@ -1,8 +1,8 @@
-# golang-design-pattern
+# Go 语言设计模式
 
 [![Build Status](https://travis-ci.org/senghoo/golang-design-pattern.svg?branch=master)](https://travis-ci.org/senghoo/golang-design-pattern)
 
-Golang 设计模式的实例代码
+Go 语言设计模式的实例代码
 
 ## 创建型模式
 
