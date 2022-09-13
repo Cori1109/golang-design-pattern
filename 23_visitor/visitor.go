@@ -63,7 +63,7 @@ func (*ServiceRequestVisitor) Visit(customer Customer) {
 	}
 }
 
-// only for enterprise
+// AnalysisVisitor only for enterprise
 type AnalysisVisitor struct{}
 
 func (*AnalysisVisitor) Visit(customer Customer) {
