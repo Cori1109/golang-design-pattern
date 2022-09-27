@@ -15,7 +15,7 @@ type MulDecorator struct {
 	num int
 }
 
-func WarpMulDecorator(c Component, num int) Component {
+func WrapMulDecorator(c Component, num int) Component {
 	return &MulDecorator{
 		Component: c,
 		num:       num,
@@ -31,7 +31,7 @@ type AddDecorator struct {
 	num int
 }
 
-func WarpAddDecorator(c Component, num int) Component {
+func WrapAddDecorator(c Component, num int) Component {
 	return &AddDecorator{
 		Component: c,
 		num:       num,
