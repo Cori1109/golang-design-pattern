@@ -62,3 +62,4 @@ _testmain.go
 *.prof
 
 
+.idea

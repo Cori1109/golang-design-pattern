@@ -9,7 +9,7 @@ func TestMediator(t *testing.T) {
 	mediator.Video = &VideoCard{}
 	mediator.Sound = &SoundCard{}
 
-	//Tiggle
+	// Tiggle
 	mediator.CD.ReadData()
 
 	if mediator.CD.Data != "music,image" {
